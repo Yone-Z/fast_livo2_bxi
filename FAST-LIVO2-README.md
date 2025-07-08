@@ -113,14 +113,18 @@ Thanks to the following repositories for the code reference:
 
     2.5.1 编译安装 Livox-SDK2：
 
-$ git clone https://github.com/Livox-SDK/Livox-SDK2.git
-$ cd ./Livox-SDK2/
-$ mkdir build
-$ cd build
-$ cmake .. && make -j
-$ sudo make install
+          git clone https://github.com/Livox-SDK/Livox-SDK2.git
+          cd ./Livox-SDK2/
+          mkdir build
+          cd build
+          cmake .. && make -j
+          sudo make install
 
     2.5.2 Follow [livox_ros_driver2 Installation](https://github.com/Livox-SDK/livox_ros_driver2).
+
+          cd src/livox_ros_driver2/
+          source /opt/ros/humble/setup.sh
+          ./build.sh humble
 
      why not use `livox_ros_driver`? Because it is not compatible with ROS2 directly. actually i am not think there s any difference between [livox ros driver](https://github.com/Livox-SDK/livox_ros_driver.git) and [livox ros driver2](https://github.com/Livox-SDK/livox_ros_driver2.git) 's `CustomMsg`, the latter 's ros2 version is sufficient.
 
